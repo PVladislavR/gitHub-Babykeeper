@@ -1,5 +1,6 @@
 body {
     color: blue;
     font-size: 250%;
-
+    background: darkviolet;
+    background-size: cover;
 }
