@@ -47,16 +47,16 @@ if(!isMobile) {
             if (i < (allContElements-1) && anim) {
                 startTime();
                 i++;
-                $('.slids')[i].style.top =  '0%';
-                $('.slids')[i].style.transition = 'top 2s';
+                $('.slids')[i].style.right =  '0%';
+                $('.slids')[i].style.transition = 'righy 2s';
                 $('.slids')[i].style.fontSize = '1050%';
                 stopTime();
             }
         } else {
             if (i > 0 && anim) {
                startTime();
-                $('.slids')[i].style.top = 100 + '%';
-                $('.slids')[i].style.transition = 'top 2s';
+                $('.slids')[i].style.right = 100 + '%';
+                $('.slids')[i].style.transition = 'right 2s';
                 $('.slids')[i].style.fontSize = '0%';
                 i--;
                stopTime();
