@@ -48,7 +48,7 @@ if(!isMobile) {
                 startTime();
                 i++;
                 $('.slids')[i].style.right =  '0%';
-                $('.slids')[i].style.transition = 'righy 2s';
+                $('.slids')[i].style.transition = 'right 2s';
                 $('.slids')[i].style.fontSize = '1050%';
                 stopTime();
             }
