@@ -1,5 +1,3 @@
-@@ -0,0 +1,168 @@
-
 html {
     height: 100%;
 }
@@ -157,7 +155,7 @@ a {
 }
 
 .slid_5 {
-    background: url("img/automn.jpg") no-repeat center;
+    background: url("img/autumn.jpg") no-repeat center;
     background-size: cover;
 }
 

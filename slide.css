@@ -9,7 +9,7 @@
 .item_1, .item_3 {
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgba(51,47,42,0.41);
+    /*background-color: rgba(51,47,42,0.41);*/
 }
 
 .item_1 {
@@ -21,19 +21,32 @@
 }
 
 .item_2 {
-    background-color: rgba(2,98,2,0.41);
     overflow: hidden;
     margin: 0 2px;
     display: flex;
     flex-direction: column;
     position: relative;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .text {
+    color: #ffffff;
+    font-size: 450%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     width: 100%;
     position: absolute;
     display: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.c-1 { background-image: url("img/allSasons.jpg")}
+.c-2 { background-image: url("img/winter.jpg")}
+.c-3 { background-image: url("img/spring.jpg")}
+.c-4 { background-image: url("img/summer.jpg")}
+.c-5 { background-image: url("img/autumn.jpg")}
 
