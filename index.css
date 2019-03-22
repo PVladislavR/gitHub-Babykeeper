@@ -1,0 +1,571 @@
+html {
+    height: 100%;
+}
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+/*Тело*/
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(125deg, #fffa86, #ffd45b, #c0ee43);
+    font-family: 'Roboto Slab', serif;
+}
+.children {
+
+    background: url("img/System for protection  of your children копия.png") no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+.textls {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-weight: 700;
+    color: #4f5b2f;
+    letter-spacing: 1.5px;
+}
+
+
+/*Всё для header*/
+
+header {
+    margin-bottom: 1.5%;
+    width: 100%;
+    display: flex;
+    height: 10%;
+    background: #fff585;
+    justify-content: center;
+
+}
+.flex-content {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.flex-element {
+    font-family: Pristina;
+    display: block;
+}
+.element-1 {
+    flex-grow: 20;
+    color: #9f2e2e;
+    font-size: 150%;
+}
+.element-2 {
+    letter-spacing: 0.3em;
+}
+.element-2, .element-3, .element-4 {
+    color: #e2ac1b;
+    flex-grow: 1;
+    font-size: 120%;
+}
+.element-2:hover{
+    color: #b8e222;
+}
+
+.element-4:hover {
+    color: #B8E222;
+    cursor: pointer;
+}
+
+/*Страница с пользовательским интерфейсом */
+
+.informationUser {
+    padding-bottom: 2%;
+    z-index: 100;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    background: linear-gradient(125deg, #e2ac58, #cbcf00);
+    width: auto;
+    flex-basis: 100px;
+    height: auto;
+    min-height: 30%;
+    border-radius: 20px;
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.3);
+    /*clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%);*/
+}
+
+.profileUser {
+    margin-top: 5%;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: auto;
+}
+
+.photoUser {
+    width: 150px;
+    height: 150px;
+    background: url(https://cdn22.img.ria.ru/images/155141/77/1551417782_0:142:2764:1697_600x0_80_0_0_cca4e54c82382681bc9db6bf20b05b5c.jpg) no-repeat center;
+    background-size: cover;
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 10em;
+}
+
+.nameUser, .replacementPassword, .addHab, .allHabUser {
+    font-size: 140%;
+}
+
+.replacementPassword, .addHab {
+    margin-bottom: 0;
+}
+
+.replacementPassword:hover, .addHab:hover{
+    cursor: pointer;
+    color: #89db35;
+}
+
+.replacementAllAndAddHab, .addHab, allHabUser {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    width: auto;
+    height: auto;
+}
+
+.repInp, .infoHab {
+    margin: 5% 0;
+    display: none;
+    flex-direction: column;
+
+}
+
+.inRepPas, .logHab, .pasHab,  .add, .change {
+    outline: none;
+    text-align: center;
+    font-size: 120%;
+    border: none;
+    margin-bottom: 5%;
+    clip-path: polygon(5% 0, 100% 0, 100% 80%, 95% 100%, 0 100%, 0 50%);
+    background: linear-gradient(125deg, #cbcf00, #e2ac58);
+}
+
+.hideHab, .hideRep{
+    margin: 0;
+    font-size: 0;
+}
+
+.hideHab:hover, .hideRep:hover, .add:hover, .change:hover {
+   color: #89db35;
+}
+
+.allHab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.hadOfUser {
+    width: 30%;
+    background: #89db35;
+}
+
+
+/*Всё для Footer*/
+
+footer {
+    position: relative;
+    align-self: flex-end;
+    margin-top: 1.5%;
+    width: 100%;
+    display: flex;
+    height: 10%;
+    background: #fff585;
+    justify-content: center;
+}
+
+
+/*Registration and enter */
+
+.log hr, .sig hr {
+    border: 1px solid #afbf71;
+}
+.log, .sig {
+    z-index: 100;
+    position: absolute;
+    margin-top: 40px;
+    display: block;
+    padding:  20px 20px 30px 20px;
+    width: 200px;
+    clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%);
+    background: linear-gradient(125deg, #e2ac58, #cbcf00);
+    border-radius: 5px;
+}
+.log input, .sig input  {
+    width: 100%;
+    border: none;
+    text-align: center;
+    margin: 0;
+    border-radius: 1px;
+    clip-path: polygon(5% 0, 100% 0, 100% 55%, 95% 100%, 0 100%, 0 45%);
+    outline: none;
+}
+.log input::-webkit-input-placeholder, .sig input::-webkit-input-placeholder {
+    color: #636701;
+}
+.log input::-moz-placeholder, .sig input::-moz-placeholder {
+    color: #606000;
+}
+.sub {
+    width: 100%;
+    color: #2e2d6b;
+    padding: 2px 15px;
+    background: linear-gradient(125deg, #ffd16a, #e0ff72);
+
+}
+.sub:hover {
+    background: linear-gradient(125deg, #c99008, #89db35);
+}
+.inp {
+    color: #283780;
+    background: linear-gradient(125deg, #e0ff72, #ffd16a);
+}
+.log a {
+    color: #ffe04b;
+}
+.log a:visited {
+    color: #8a590f
+}
+.log a:hover {
+    color: #c9ec70
+}
+
+
+/*Ошибки*/
+
+.errors {
+    font-size: 15px;
+    color: #690002;
+}
+
+
+/*Кнопка выхода*/
+
+.exit {
+    color: #e2ac1b;
+    font-size: 100%;
+}
+.exit:hover {
+    color: #b8e222;
+}
+
+
+ /*фон*/
+
+.flex-content-1 {
+    overflow: auto;
+    position: relative;
+    display: flex;
+    width: 80%;
+    min-height: 80%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+    .imgin {
+        position: absolute;
+        background: url("img/154.png") no-repeat 90%/60%;
+        filter: blur(3px);
+        opacity: 0.3;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+    .flex-element-1 {
+    align-self: flex-start;
+}
+    .flex-element-2 {
+   align-self: flex-end;
+}
+    .flex-element-2, .flex-element-1 {
+        z-index: 10;
+    display: flex;
+    width: 40%;
+    height: 40%;
+    background: url("img/System for protection  of your children.png") no-repeat center  80%/80% ;
+}
+
+
+/*Скроллеры*/
+    .ab {
+        z-index: 100;
+    margin: 25px 0 25px 0;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+        .scrol {
+            position: relative;
+            overflow: hidden;
+            width: 90%;
+            height: 80%;
+        }
+        .s-2 {
+            align-self: flex-end;
+        }
+            .bg-1 {
+                background: rgba(255, 168, 18, 0.33);
+            }
+            .bg-2 {
+                background: rgba(247, 255, 0, 0.33);
+
+            }
+            .bg-1:hover, .bg-2:hover {
+                background: rgba(24, 255, 0, 0.33);
+            }
+            .contener {
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 103%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+                .flex-element-3{
+                    margin: 3% 10px 3% 10px;
+                    flex-basis: 200px;
+                    height: 40%;
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    align-self: flex-start;
+                    clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+                }
+                .name_scrols-1, .name_scrols-2 {
+    overflow: auto;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(255, 133, 0, 0.2);
+    padding: 0 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    text-align: center;
+    margin: 5px 0 0 0;
+    font-family: Pristina;
+    font-size: 170%;
+    letter-spacing: 0.3em;
+    font-weight: 600;
+}
+                .name_scrols-2 {
+    bottom: 1%;
+}
+
+
+/* Test 2*/
+
+
+.conteiner {
+    background-color: #fff6a8;
+    align-self: flex-start;
+    z-index: 120;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: repeat(4 ,minmax(1fr, 3fr));
+    grid-template-rows: repeat(6, minmax(200px, 100px)); /* 120px */
+}
+
+.elemets {
+    opacity: 0.85;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-color: #9f2e2e;
+}
+
+.elem_1 {
+    grid-row: 1/3;
+    grid-column: 1/4;
+}
+
+.elem_11 {
+    grid-row: 6/4;
+    grid-column: 5/2;
+}
+/*
+Всё о скролах
+(https://www.simplecoding.org/css-oformlenie-skrollbara-v-stile-gmail.html)
+( http://htmlbook.ru/blog/polzovatelskie-skrollbary-v-webkit )
+*/
+.flex-content-1::-webkit-scrollbar{   /* Ширина скрола */
+    width: 0;
+}
+
+
+/* Test 3 */
+
+.body {
+    width: 100%;
+    height: 100%;
+    background-color: #100e17;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+}
+
+.t2elemets {
+    font-size: 0;
+    padding: 10px;
+   /* background-color: #89db35;*/
+    border-color: #dc00ba;
+
+}
+
+.t2elem_1 {
+    grid-column: 2/2;
+    color: #fff;
+    font-size: 25px;
+    font-family: "Modern No. 20";
+    font-weight: bold;
+    padding: 10px 0 0 10px;
+}
+
+.t2elem_2 {
+    grid-column: 5/5;
+    border-radius: 10% 0 0 0;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-top-width: 3px;
+    border-top-style: solid;
+}
+
+.t2elem_3 {
+    border-top-width: 3px;
+    border-top-style: solid;
+}
+
+.t2elem_4 {
+    z-index: 2;
+    margin-right: -3px;
+    border-radius: 0 10% 0 0;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-right-width: 3px;
+    /*background: linear-gradient(54deg, #cc8d00, #cc6401, #ce3ab4, #460034);*/
+}
+
+.t2elem_6 {
+    grid-column: 4/4;
+    z-index: 4;
+    margin: 0 -3px -3px 0;
+    border-radius: 0 0 10% 0;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+.t2elem_7 {
+    grid-column: 2/2;
+    border-left-style: solid;
+    border-left-width: 3px;
+}
+
+.t2elem_8 {
+    grid-column: 3/3;
+    z-index: 2;
+    margin: 0 -1px 0 -3px;
+    border-radius: 10% 0 0 0;
+    /*border-right-style: solid;
+    border-right-width: 3px;*/
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-top-width: 3px;
+}
+
+.t2elem_9 {
+    z-index: 3;
+    grid-column: 4/4;
+}
+
+.t2elem_10 {
+    grid-column: 6/6;
+    grid-row: 2/4;
+    border-radius: 50% 50% 50% 50%;
+    /*margin: 0 0 -10px -10px;*/
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-left-width: 3px;
+
+}
+
+.t2elem_11 {
+    border-radius: 0 0 10% 10%;
+    grid-column: 2/2;
+
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-right-style: solid;
+    border-right-width: 3px;
+}
+
+.t2elem_12 {
+    z-index: 5;
+    grid-column: 4/6;
+    border-radius: 50% 50% 50% 50%;
+    /*margin: -10px -10px 0 0;*/
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-left-width: 3px;
+}
+
+
+
+
+
