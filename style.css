@@ -1,13 +1,23 @@
-body {
-    color: blue;
-    font-size: 150%;
-    background: rgba(22,172,0,0.65);
+
+a{text-decoration: none}
+
+.section-sixth{padding: 100px 0;position: relative}
+
+.section-sixth__slider{
+    width: 600px;
+    margin: 0 auto;
+    overflow:hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
 }
 
-.ind {
-    width: 300px;
-    height: 300px;
-    background-color: red;
-    -webkit-clip-path: polygon(100% 13%, 25% 0, 1% 20%, 1% 76%, 24% 100%, 99% 91%, 93% 73%, 48% 68%, 36% 60%, 36% 44%, 48% 36%, 92% 32%);
-    clip-path: polygon(100% 13%, 25% 0, 1% 20%, 1% 76%, 24% 100%, 99% 91%, 93% 73%, 48% 68%, 36% 60%, 36% 44%, 48% 36%, 92% 32%);
-}
+.section-sixth__slider_item {width: inherit;text-align: center;display: none;position: relative}
+.section-sixth__slider_item.active{display: block}
+
+.section-sixth__slider_dots{margin-left: 860px;margin-top: 20px}
+.section-sixth__slider_dot {color: #000;margin-right: 20px; border: 1px solid black;border-radius: 30px}
+.section-sixth__slider_dot.active{ color: red;margin-right: 20px;border: 1.5px solid red}
+
+.section-sixth__slider_btn-next{position: absolute;top: 150px;right: 550px;z-index: 20}
+.section-sixth__slider_btn-prev{position: absolute;top: 150px;left: 550px;z-index: 20}
