@@ -12,7 +12,7 @@ $(document).ready(function(){
                 i=0;
             }
             $(dot[i]).addClass('active');
-            $(item[i]).addClass('active');
+            $(item[i]).addClass('active');н
         });
 
         $('#section-sixth__slider_btn-prev').on('click', function(){

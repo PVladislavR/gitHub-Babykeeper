@@ -1,15 +1,7 @@
-
-a{text-decoration: none}
-
-.section-sixth{padding: 100px 0;position: relative}
-
-.section-sixth__slider{
-    width: 600px;
-    margin: 0 auto;
-    overflow:hidden;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+body {
+    color: blue;
+    font-size: 150%;
+    background: white;
 }
 
 .section-sixth__slider_item {width: inherit;text-align: center;display: none;position: relative}
