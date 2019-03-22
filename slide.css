@@ -1,0 +1,39 @@
+.container {
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.item_1, .item_3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(51,47,42,0.41);
+}
+
+.item_1 {
+    background-image: url("left.png");
+}
+
+.item_3 {
+    background-image: url("right.png");
+}
+
+.item_2 {
+    background-color: rgba(2,98,2,0.41);
+    overflow: hidden;
+    margin: 0 2px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+
