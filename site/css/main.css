@@ -1,0 +1,176 @@
+/* Specification */
+h1{font: 62px 'Varela Round';line-height: 72px}
+h2{font: 42px 'Varela Round';line-height: 52px}
+h3{font: 26px 'Varela Round';line-height: 34px}
+h1,h2,h3,h4{font-weight: 400;color: #2d2e34}
+
+p{font: 18px 'Lato';color: #8c8f94;line-height: 28px}
+
+a{font: 16px 'Lato';text-decoration: none;color: #000}
+
+ul {padding-left: 0px}
+ul > li {list-style: none;display: inline-block}
+
+.container{width: 1170px;display: grid;margin: auto}
+
+/* Buttons */
+.btn{
+    width: 215px;
+    height: 42px;
+    background: #267df4;
+    font: 16px 'Lato';
+    color: #fff;
+    border: 1px solid rgba(38, 39, 45, 0.1);
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px}
+.btn:active, .btn:focus {outline: none;box-shadow: none}
+.btn:hover{cursor: pointer}
+
+/* Inputs */
+input[type="email"]:focus {outline: none}
+input[type="email"] {
+    width: 500px;
+    border-radius: 30px;
+    border: 3px solid #e7e7ea;
+    padding: 15px 15px}
+
+/* Header */
+
+header {
+    display: grid;
+    padding: 200px 0 510px;
+    background-image: url("../image/banner_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden}
+
+.header__nav{
+    position: fixed;
+    z-index: 10;
+    top:0;
+    width: 100%;
+    padding: 40px 0;
+    word-spacing: 40px;
+    background: transparent;
+    transition: all 0.25s cubic-bezier(0, 0, 0.55, 1)}
+
+/* Mobile nav */
+.header__nav_mobile.active{left: 0}
+.header__nav_mobile{
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 340px;
+    background: #26272d;
+    transition: left 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+    left: -340px}
+
+.header__logo_white{margin: 75px 0 0 40px}
+
+.header__nav_mobile-close{position: absolute;top: 70px;right: 16px}
+.header__nav_mobile-close :hover{color: #fff}
+
+.header__nav_mobile a{color: #fff;font-size: 1.1em}
+.header__nav_mobile a:hover{color: #267df4}
+.header__nav_mobile ul{display: grid;grid-row-gap: 10px;margin: 40px 0 0 40px}
+
+/* Header__nav animation*/
+.header__nav.active{
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15)}
+
+.header__nav > .container{display: flex;justify-content: space-between;align-items: center}
+.header__btn{width: 130px;text-align: center}
+header a:hover{color:#9f9fa1;transition: .3s ease}
+
+/* First section */
+
+.section-first{z-index: 1;position: relative;text-align: center}
+.section-first__btn{background:transparent;color: #000;width: 205px;margin-top: 30px}
+
+.section-first__iphoneimg{
+    position: absolute; 
+    bottom: -520px;
+    left: 50%;
+    margin-left: -185px}
+
+/* Second section (Features) */
+
+.section-second{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 120px;
+    grid-template-areas: 
+        "left right"
+        "hr hr"}
+
+.section-second__right{grid-area: right;margin: 120px 0 120px}
+.section-second__left{grid-area: left;margin: 120px 0 120px}
+.section-second__hr{grid-area: hr;border:1px solid #f4f4f4;width: 100%}
+.section-second i{font-size: 45px;color: #267df4}
+
+/* Third section (Iphone feature) */
+
+.section-third__content p{font-size: 20px}
+.section-third{
+    position: relative;
+    padding-top: 260px;
+    display: grid;
+    grid-template-columns: 1.45fr 1fr;
+    grid-template-areas: 
+        ". content"}
+
+.section-third__image{position: absolute;right: 44%;top: 65px}
+.section-third__content_btn-white{background: transparent;color: #000;width: 140px}
+
+/* Fourth section (Map feature) */
+
+.section-fourth{padding: 460px 0 140px;position: relative;overflow: hidden}
+.section-fourth__content{display: grid;grid-template-columns: 0.4fr}
+.section-fourth__content h3{font-size: 12px;font-weight: 700;letter-spacing: 0.1em;text-transform: uppercase}
+.section-fourth__map-img{position: absolute;left: 60%;bottom: 150px}
+
+/* Fifth section (Iphone screens + Ready to buy) */
+
+.section-fifth{text-align: center;background: #f5f5f5;padding: 130px 0 130px 0}
+.section-fifth__hr{width: 50px;border: 1px solid #267df4}
+.section-fifth p{text-transform: uppercase;font-size: 12px}
+
+.section-fifth__screens{display: grid;grid-template-columns: repeat(5,1fr);justify-items: center;padding-bottom: 200px}
+.section-fifth__screens *{margin-top: 90px;box-shadow: 10px 10px 16px 0 rgba(61, 61, 62, 0.15)}
+
+.section-fifth__form,.form{position: relative;width: 530px;max-width: 100%;margin:auto;padding-bottom: 37px}
+.section-fifth__form_btn{
+    width: 165px;
+    background: #6fc754;
+    color: #fff;
+    position: absolute;
+    top: 6px;
+    right: 0}
+
+/* Sixth section (Customers) */
+.section-sixth{padding: 100px 0;position: relative}
+
+.section-sixth__slider{
+    width: 600px;
+    margin: 0 auto;
+    overflow:hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+}
+
+.section-sixth__slider_item {width: inherit;text-align: center;display: none;position: relative}
+.section-sixth__slider_item.active{display: block}
+
+.section-sixth__slider_dots{margin-left: 860px;margin-top: 20px}
+.section-sixth__slider_dot {color: #000;margin-right: 20px; border: 1px solid black;border-radius: 30px}
+.section-sixth__slider_dot.active{ color: red;margin-right: 20px;border: 1.5px solid red}
+
+.section-sixth__slider_btn-next{position: absolute;top: 150px;right: 550px;z-index: 20}
+.section-sixth__slider_btn-prev{position: absolute;top: 150px;left: 550px;z-index: 20}
