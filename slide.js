@@ -1,6 +1,6 @@
 /*======= Slider ====================================*/
 
-var i = 0, allItems = $('.text').length, anim=true;
+var i = 0, allItems = $('.text').length, anim=true, itemsAll = $('.text');
 
 function startTime() {
     timerId = setInterval(function () {
@@ -15,8 +15,7 @@ function stopTime(tim) {
     }, tim);
 }
 
-$('.text').eq(i).css({display: 'flex'});
-var itemsAll = $('.text');
+itemsAll.eq(i).css({display: 'flex'});
 $('.item_1').bind('click', function () {
     if(anim) {
         startTime();
