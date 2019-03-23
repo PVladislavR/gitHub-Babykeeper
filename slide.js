@@ -30,6 +30,7 @@ $('.item_1').bind('click', function () {
         stopTime(1000);
     }
 });
+
 $('.item_3').bind('click', function () {
     if(anim) {
         startTime();
@@ -72,6 +73,7 @@ $('.button-menu').bind('click', function () {
 
 
 $('.menu-items').hover(function () {
+    $(this).css({background: 'blue'});
     countItems = $($(this).children(0))[0].children.length;
     $(this).children(0).css({width: 300 + '%'});
     $(this).children(0).animate({height: countItems*100 + '%'}, 500)
@@ -79,17 +81,19 @@ $('.menu-items').hover(function () {
         height: 100/countItems + '%'
     });
     itemInItemMenu = $(this).children(0);
-    $(itemInItemMenu).hover(function () {
-        $(this).children(0).css({
+    $('.items_in_item_in_item-menu').hover(function () {
+        console.log($(this));
+        $(this).css({
             background: 'blue'
         })
     }, function () {
-        $(this).children(0).css({
+        $(this).css({
             background: 'aqua'
         })
     })
 },
     function () {
+        $(this).css({background: 'red'});
         vb = $($(this).children(0))[0].children.length;
         $(this).children(0).css({
             width: 0 + '%',
