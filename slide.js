@@ -70,18 +70,18 @@ $('.button-menu').bind('click', function () {
     }
 });
 
-
+var itemsInItemInItemMenu = $('.items_in_item_in_item-menu');
 $('.menu-items').hover(function () {
     $(this).css({background: 'blue'});
-    countItems = $($(this).children(0))[0].children.length;
+    countItems = $(this).find('.items_in_item_in_item-menu').length;
     $(this).children(0).css({width: 300 + '%'});
-    $(this).children(0).animate({height: countItems*100 + '%'}, 500)
-    $('.items_in_item_in_item-menu').css({
+    $(this).children(0).animate({height: countItems*100 + '%'}, 500);
+        itemsInItemInItemMenu.css({
         height: 100/countItems + '%'
     });
     itemInItemMenu = $(this).children(0);
-    $('.items_in_item_in_item-menu').hover(function () {
-        console.log($(this));
+        itemsInItemInItemMenu.hover(function () {
+        //console.log($(this));
         $(this).css({
             background: 'blue'
         })
@@ -98,7 +98,7 @@ $('.menu-items').hover(function () {
             width: 0 + '%',
             height: 0 + '%'
         });
-        $('.items_in_item_in_item-menu').css({
+        itemsInItemInItemMenu.css({
             height: 0 + '%'
         })
     });
