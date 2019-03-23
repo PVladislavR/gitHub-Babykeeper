@@ -16,7 +16,7 @@ function stopTime(tim) {
 }
 
 $('.text').eq(i).css({display: 'flex'});
-
+var itemsAll = $('.text');
 $('.item_1').bind('click', function () {
     if(anim) {
         startTime();
@@ -24,9 +24,9 @@ $('.item_1').bind('click', function () {
         if (i == allItems) {
             i = 0
         }
-        $('.text').eq(i).css({display: 'flex', left: 100 + '%'});
-        $('.text').eq(i).animate({left: 0 + '%'}, 1000);
-        $('.text').eq(i - 1).animate({left: -100 + '%'}, 1000);
+        itemsAll.eq(i).css({display: 'flex', left: 100 + '%'});
+        itemsAll.eq(i).animate({left: 0 + '%'}, 1000);
+        itemsAll.eq(i - 1).animate({left: -100 + '%'}, 1000);
         stopTime(1000);
     }
 });
@@ -38,9 +38,9 @@ $('.item_3').bind('click', function () {
         if (i == (allItems * (-1))) {
             i = 0
         }
-        $('.text').eq(i).css({display: 'flex', left: -100 + '%'});
-        $('.text').eq(i).animate({left: 0 + '%'}, 1000);
-        $('.text').eq(i + 1).animate({left: 100 + '%'}, 1000);
+        itemsAll.eq(i).css({display: 'flex', left: -100 + '%'});
+        itemsAll.eq(i).animate({left: 0 + '%'}, 1000);
+        itemsAll.eq(i + 1).animate({left: 100 + '%'}, 1000);
         stopTime(1000);
     }
 });
