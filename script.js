@@ -1,6 +1,7 @@
 var i = 1, 
     item = document.getElementsByClassName('section-sixth__slider_item'), 
     dot = document.getElementsByClassName('section-sixth__slider_dot'),
+    sectionSixthSliderItem = $('.section-sixth__slider_item'),
     anim=true;
     
     function startTime() {
@@ -25,9 +26,9 @@ var i = 1,
                 i=0;
             }
             $(dot[i]).addClass('active');
-            $('.section-sixth__slider_item').eq(i).css({left: 100 + '%'});
-            $('.section-sixth__slider_item').eq(i).animate({left: 0 + '%'}, 1000);
-            $('.section-sixth__slider_item').eq(i-1).animate({left: -100 + '%'}, 1000);
+            sectionSixthSliderItem.eq(i).css({left: 100 + '%'});
+            sectionSixthSliderItem.eq(i).animate({left: 0 + '%'}, 1000);
+            sectionSixthSliderItem.eq(i-1).animate({left: -100 + '%'}, 1000);
             stopTime(1000);
          }
     });    
@@ -41,13 +42,13 @@ var i = 1,
                 i=2;
             }
             $(dot[i]).addClass('active');
-            $('.section-sixth__slider_item').eq(i).css({left: -100 + '%'});
-            $('.section-sixth__slider_item').eq(i).animate({left: 0 + '%'}, 1000);
+            sectionSixthSliderItem.eq(i).css({left: -100 + '%'});
+            sectionSixthSliderItem.eq(i).animate({left: 0 + '%'}, 1000);
             if(i==item.length-1){
-                $('.section-sixth__slider_item').eq(0).animate({left: 100 + '%'}, 1000);
+                sectionSixthSliderItem.eq(0).animate({left: 100 + '%'}, 1000);
             }
             else{
-                $('.section-sixth__slider_item').eq(i+1).animate({left: 100 + '%'}, 1000);
+                sectionSixthSliderItem.eq(i+1).animate({left: 100 + '%'}, 1000);
             }
             stopTime(1000);
          }
@@ -59,19 +60,19 @@ var i = 1,
             $(dot).eq(i).removeClass('active');
             var j=i;
             i=$(this).index();
-            if(i>j){ 
-                $('.section-sixth__slider_item').eq(i).css({left: 100 + '%'});
-                $('.section-sixth__slider_item').eq(i).animate({left: 0 + '%'}, 1000);
-                $('.section-sixth__slider_item').eq(j).animate({left: -100 + '%'}, 1000);
+            if(i>j){
+                sectionSixthSliderItem.eq(i).css({left: 100 + '%'});
+                sectionSixthSliderItem.eq(i).animate({left: 0 + '%'}, 1000);
+                sectionSixthSliderItem.eq(j).animate({left: -100 + '%'}, 1000);
             }
             else{
-                $('.section-sixth__slider_item').eq(i).css({left: -100 + '%'});
-                $('.section-sixth__slider_item').eq(i).animate({left: 0 + '%'}, 1000);
+                sectionSixthSliderItem.eq(i).css({left: -100 + '%'});
+                sectionSixthSliderItem.eq(i).animate({left: 0 + '%'}, 1000);
                 if(i==item.length-1){
-                    $('.section-sixth__slider_item').eq(0).animate({left: 100 + '%'}, 1000);
+                    sectionSixthSliderItem.eq(0).animate({left: 100 + '%'}, 1000);
                 }
                 else{
-                    $('.section-sixth__slider_item').eq(j).animate({left: 100 + '%'}, 1000);
+                    sectionSixthSliderItem.eq(j).animate({left: 100 + '%'}, 1000);
                 }
             }
             $(dot).eq(i).addClass('active');
