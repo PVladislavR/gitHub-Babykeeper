@@ -13,6 +13,30 @@ ul {padding-left: 0px}
 ul > li {list-style: none;display: inline-block}
 
 .container{width: 1170px;display: grid;margin: auto}
+
+/* Buttons */
+button{border: 0}
+button:focus,button:active{outline: none;box-shadow: none}
+
+.btn{
+    width: 215px;
+    height: 42px;
+    background: #267df4;
+    font: 16px 'Lato';
+    color: #fff;
+    border: 1px solid rgba(38, 39, 45, 0.1);
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px}
+.btn:hover{cursor: pointer}
+
+/* Inputs */
+input[type="email"]:focus {outline: none}
+input[type="email"] {
+    width: 500px;
+    border-radius: 30px;
+    border: 3px solid #e7e7ea;
+    padding: 15px 15px}
 body{padding: 0;margin: 0}
 
 /**/
@@ -66,3 +90,98 @@ body{padding: 0;margin: 0}
 .section-sixth__slider_btn-next:hover,.section-sixth__slider_btn-prev:hover{color: #717171;transition: all .4s ease;cursor: pointer}
 .section-sixth__slider_btn-next{position: absolute;right:  500px;top: 170px;font-size: 42px;color: #d5d5d6}
 .section-sixth__slider_btn-prev{position: absolute;left: 500px;top: 170px;font-size: 42px;color: #d5d5d6}
+
+/* Seventh section (Plan) */
+
+.section-seventh{background: #f4f4f5;padding: 160px 0 190px}
+.section-seventh-container{display: grid;grid-template-columns: 1fr 1fr}
+.section-seventh__plans{
+    position: relative;
+    overflow: hidden;
+    width: 680px;
+    height: 700px;
+}
+
+.section-seventh__selected-block{width: 350px}
+.section-seventh__switch-toggels{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #c2c2c4;
+    border-radius: 30px;
+    margin-bottom: 50px
+}
+.section-seventh__switch-toggels:after{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    width: 118px;
+    height: 44px;
+    left: 3px;
+    top: 3px;
+    transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 3px 2px 10px rgba(0,0,0,0.20)
+}
+.section-seventh__switch-toggels.active:after{left: 129px}
+
+.section-seventh__select-individual,.section-seventh__select-company{ 
+    z-index: 2;
+    width: 118px;
+    height: 44px;
+    margin: auto;
+    font: 400 14px 'Lato';
+    color: #adaeb0;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.8s cubic-bezier(0.545, 0, 0.05, 1)
+}
+.section-seventh__select-individual.active,.section-seventh__select-company.active{color: #000}
+
+.section-seventh__selected-block_text-info{font-size: 14px}
+.section-seventh__selected-block_text-info a{color: #66a2f4;text-decoration: underline;transition: all 0.3s}
+.section-seventh__selected-block_text-info a:hover{color: #2771d6;cursor: pointer}
+
+.section-seventh__first-plan,.section-seventh__second-plan{
+    z-index: 2;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    top: 10px
+}
+
+.section-seventh__first-plan.index{z-index: 0}
+.section-seventh__second-plan{transform: scale(0.8);transition: all 2s cubic-bezier(0.545, 0, 0.05, 1);z-index: 1}
+.section-seventh__second-plan.animate{transform: scale(1)}
+
+.section-seventh__first-plan_free,.section-seventh__first-plan_pro{
+    position: relative;
+    height: 540px;
+    width: 330px;
+    padding-top: 50px;
+    background: #ebebed;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.545, 0, 0.05, 1)
+}
+.section-seventh__first-plan_free:hover,
+.section-seventh__first-plan_pro:hover{background: #fff;transform: scale(1.01);box-shadow: 2px 3px 10px rgba(0,0,0,0.1)}
+
+.section-seventh__first-plan h3{color: #65656a}
+.section-seventh__first-plan h6{border: 1px solid #c2c2c4;border-radius: 30px;width: 50px;margin: 0 auto}
+
+.section-seventh__first-plan_privileges{color: #000;font-size: 16px}
+.fa-check{color: #99d786;font-size: 16px}
+
+.section-seventh__first-plan_btn{
+    background: transparent;
+    border: 1px solid #2771d6;
+    color: #267df4;
+    margin-top: 82px;
+    transition: all 0.3s cubic-bezier(0.545, 0, 0.05, 1)
+}
+.section-seventh__first-plan_btn:hover{color: #fff;background: #2771d6}
+.section-seventh__first-plan_pro > .btn{margin-top: 40px}
