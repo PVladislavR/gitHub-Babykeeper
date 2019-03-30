@@ -48,3 +48,37 @@ body {
 .state {
     top: 0;
 }
+
+ul {
+    list-style: none;
+    height: 0;
+    width: 0px;
+    background-color: #32ff00;
+}
+
+li {
+    width: 0;
+    background-color: blue;
+    margin-bottom: 2px;
+}
+
+ul>li>ul {
+    background-color: red;
+}
+
+ul>li>ul>li {
+    background-color: orange;
+}
+
+.menu {
+    list-style-position: outside;
+    height: 100%;
+}
+
+.itemMenu {
+    width: 20px;
+}
+
+.menu:hover>.itemMenu:hover>.podMenu {
+    width: 100px;
+}
