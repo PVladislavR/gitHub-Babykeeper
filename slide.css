@@ -25,14 +25,15 @@ body {
     position: absolute;
     top: 100%;
     display: grid;
+    background-size: contain;
 }
 
-.contentItem:nth-child(1) { background-color: red; }
-.contentItem:nth-child(2) { background-color: orangered; }
-.contentItem:nth-child(3) { background-color: green; }
-.contentItem:nth-child(4) { background-color: black; }
-.contentItem:nth-child(5) { background-color: blue; }
-.contentItem:nth-child(6) { background-color: chartreuse; }
+.contentItem:nth-child(1) { background: url("img/allSasons.jpg") no-repeat center; }
+.contentItem:nth-child(2) { background: url("img/winter.jpg") no-repeat center; }
+.contentItem:nth-child(3) { background: url("img/spring.jpg") no-repeat center; }
+.contentItem:nth-child(4) { background: url("img/summer.jpg") no-repeat center; }
+.contentItem:nth-child(5) { background: url("img/autumn.jpg") no-repeat center; }
+.contentItem:nth-child(6) { background: url("img/itWereAllSeasons.jpg") no-repeat center; }
 
 .contentItem>.item { background-color: #5d12ff; opacity: 0;}
 .contentItem>.item:nth-child(1) { grid-column: 1/1;}
