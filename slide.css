@@ -17,6 +17,9 @@ body {
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .contentItem {
@@ -28,12 +31,12 @@ body {
     background-size: contain;
 }
 
-.contentItem:nth-child(1) { background: url("img/allSasons.jpg") no-repeat center; }
-.contentItem:nth-child(2) { background: url("img/winter.jpg") no-repeat center; }
-.contentItem:nth-child(3) { background: url("img/spring.jpg") no-repeat center; }
-.contentItem:nth-child(4) { background: url("img/summer.jpg") no-repeat center; }
-.contentItem:nth-child(5) { background: url("img/autumn.jpg") no-repeat center; }
-.contentItem:nth-child(6) { background: url("img/itWereAllSeasons.jpg") no-repeat center; }
+.contentItem:nth-child(1) { background-image: url("img/allSasons.jpg"); }
+.contentItem:nth-child(2) { background-image: url("img/winter.jpg"); }
+.contentItem:nth-child(3) { background-image: url("img/spring.jpg"); }
+.contentItem:nth-child(4) { background-image: url("img/summer.jpg"); }
+.contentItem:nth-child(5) { background-image: url("img/autumn.jpg"); }
+.contentItem:nth-child(6) { background-image: url("img/itWereAllSeasons.jpg"); }
 
 .contentItem>.item { background-color: #5d12ff; opacity: 0;}
 .contentItem>.item:nth-child(1) { grid-column: 1/1;}
